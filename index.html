@@ -10,33 +10,33 @@
         <h2>Library Membership Form</h2>
         <form>
             <div class="group">
-                <label>ชื่อ - นามสกุล <span class="required"></span> (ภาษาไทยและภาษาอังกฤษ)</label>
+                <label>ชื่อ - นามสกุล <span class="required">*</span> (ภาษาไทยและภาษาอังกฤษ)</label>
                 <input type="text" name="full_name" required>
             </div>
     
             <div class="group">
-                <label>เพศ <span class="required"></span></label>
+                <label>เพศ <span class="required">*</span></label>
                 <input type="radio" name="gender" value="male" required> ชาย
                 <input type="radio" name="gender" value="female" required> หญิง
             </div>
 
             <div class="group">
-                <label>รหัสนักศึกษา <span class="required"></span></label>
+                <label>รหัสนักศึกษา <span class="required">*</span></label>
                 <input type="text" name="student_id" required>
             </div>
 
             <div class="group">
-                <label>คณะที่ศึกษา <span class="required"></span></label>
+                <label>คณะที่ศึกษา <span class="required">*</span></label>
                 <input type="text" name="faculty" required>
             </div>
 
             <div class="group">
-                <label>ที่อยู่อีเมล (E-mail address) <span class="required"></span></label>
+                <label>ที่อยู่อีเมล (E-mail address) <span class="required">*</span></label>
                 <input type="email" name="email" required>
             </div>
 
             <div class="group">
-                <label>วันเดือนปีเกิด <span class="required"></span></label>
+                <label>วันเดือนปีเกิด <span class="required">*</span></label>
                 <input type="date" name="birth_date" required>
             </div>
 
@@ -61,6 +61,9 @@
                 <label>เบอร์โทรศัพท์ <span class="required">*</span></label>
                 <input type="tel" name="phone" pattern="[0-9]{10}" required placeholder="กรุณากรอกเบอร์โทรศัพท์ 10 หลัก">
             </div>
-    
+            
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
 </body>
 </html>
